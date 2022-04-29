@@ -1,0 +1,46 @@
+#include<stdio.h>
+#include<conio.h>
+struct creative
+{
+	int s1,s2,s3,s4,s5;
+
+}d;
+void main()
+{
+	int sum,min,max,per;
+	clrscr();
+	printf("s1=");
+	scanf("%d",&d.s1);
+	printf("\ns2=");
+	scanf("%d",&d.s2);
+	printf("\ns3=");
+	scanf("%d",&d.s3);
+	printf("\ns4=");
+	scanf("%d",&d.s4);
+	printf("\ns5=");
+	scanf("%d",&d.s5);
+	sum=d.s1+d.s2+d.s3+d.s4+d.s5;
+	printf("\nsum=%d",sum);
+	per=sum/5;
+	printf("\nper=%d",per);
+	min=(d.s1<d.s2)?(d.s1<d.s3)?(d.s1<d.s4)?(d.s1<d.s5)?d.s1:d.s5:(d.s4<d.s5)?d.s4:d.s5:(d.s3<d.s4)?(d.s3<d.s4)?d.s3:d.s4:(d.s4<d.s5)?d.s4:d.s5:(d.s2<d.s3)?(d.s2<d.s4)?(d.s2<d.s5)?d.s2:d.s5:(d.s4<d.s5)?d.s4:d.s5:(d.s3<d.s4)?(d.s3<d.s5)?d.s3:d.s5:(d.s4<d.s5)?d.s4:d.s5;
+	printf("\nmin=%d",min);
+	max=(d.s1>d.s2)?(d.s1>d.s3)?(d.s1>d.s4)?(d.s1>d.s5)?d.s1:d.s5:(d.s4>d.s5)?d.s4:d.s5:(d.s3>d.s4)?(d.s3>d.s4)?d.s3:d.s4:(d.s4>d.s5)?d.s4:d.s5:(d.s2>d.s3)?(d.s2>d.s4)?(d.s2>d.s5)?d.s2:d.s5:(d.s4>d.s5)?d.s4:d.s5:(d.s3>d.s4)?(d.s3>d.s5)?d.s3:d.s5:(d.s4>d.s5)?d.s4:d.s5;
+	printf("\nmax=%d",max);
+
+
+
+
+
+
+
+
+
+
+
+
+
+	getch();
+
+
+}

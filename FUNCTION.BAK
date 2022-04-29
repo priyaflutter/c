@@ -1,0 +1,62 @@
+#include<iostream.h>
+#include<conio.h>
+class demo
+{
+	public:
+	int sum,a,b;
+	void get()
+	{
+		sum=a+b;
+		cout<<"\nsum="<<sum;
+	}
+
+
+
+};
+void main()
+{
+	clrscr();
+	int a,b,c,d,e,sum,n,m;
+	demo d;
+	cout<<"a=";
+	cin>>a;
+	cout<<"\nb=";
+	cin>>b;
+	cout<<"\nc=";
+	cin>>c;
+	cout<<"\nd=";
+	cin>>d;
+	cout<<"\ne=";
+	cin>>e;
+	cout<<"1.a 2.b";
+	cout<<"\nEnter your choise=";
+	cin>>n;
+
+	switch(n)
+	{
+		case 1:
+		{
+			cout<<"\n1.a 2.b";
+			cout<<"\nEnter your choise=";
+			cin>>m;
+			switch(m)
+			{
+				case 1:
+				{
+					d.get(a,b);
+				}
+				default:
+				{
+					cout<<"\nYour choise is wrong";
+
+				}
+				break;
+			}
+
+		}
+		break;
+	}
+
+	getch();
+
+}

@@ -1,0 +1,50 @@
+#include<iostream.h>
+#include<conio.h>
+class first
+{
+	   public:
+	   int a,b;
+	   void get()
+	   {
+		cout<<"a=";
+		cin>>a;
+		cout<<"b=";
+		cin>>b;
+	   }
+
+};
+class second
+{
+	public:
+	int sum;
+	void get1()
+	{
+		sum=a+b;
+		cout<<"sum="<<sum;
+	}
+
+
+};
+class third :public first,second
+{
+	public:
+	int min;
+	void get2()
+	{
+		min=(a<b)?a:b;
+		cout<<"\nmin="<<min;
+	}
+
+
+};
+void main()
+{
+	clrscr();
+	third t;
+	t.get();
+	t.get1();
+	t.get2();
+
+
+	getch();
+}
